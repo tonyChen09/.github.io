@@ -19,16 +19,22 @@ html {
 body {
   margin: 0;
 }
+#menu{
+	margin-left:200px;
+}
+#menu li{
+	display:inline;
+	padding:20px;
+}
 
-/* HTML5 display definitions
-   ========================================================================== */
+#menu ul{
+	list-style-type:none;
+}
 
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
- * and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
+#menu a{
+	text-decoration:none;
+}
+
 
 article,
 aside,
