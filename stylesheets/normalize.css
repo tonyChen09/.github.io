@@ -62,6 +62,11 @@ body {
 	top:-175px;
 }
 
+.form{
+	position:static;
+	padding-left:45px;
+}
+
 .puncak
 {
 	position:relative;
@@ -170,7 +175,14 @@ li a:hover{
 	background-color:grey;
 }
 
-.dropdown-content-submenu a{
+.dropdown-content-submenu-01{
+	display: none;
+    position: absolute;
+	width:200px;
+	background-color:grey;
+}
+
+.dropdown-content-submenu-01 a{
 	color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -180,6 +192,10 @@ li a:hover{
 }
 
 .dropdown-submenu:hover .dropdown-content-submenu{
+	display:inline-block;	
+}
+
+.dropdown-submenu:hover .dropdown-content-submenu-01{
 	display:inline-block;	
 }
 
@@ -206,7 +222,39 @@ li a:hover{
 
 }
 
+.perencanaan-website ol{
+	padding-left:70px;
+	width:600px;
+	font-family:times new roman;
+}
 
+.perencanaan-website p{
+	font-family:times new roman;
+}
+
+.wireframe li
+{
+	width:800px;
+}
+.wireframe
+{
+	padding-left:50px;
+}
+
+.website-evaluation li
+{
+	width:800px;
+}
+.website-evaluation{
+	padding-left:50px;
+}
+.web-design li{
+	width:800px;
+}
+
+.web-design{
+	padding-left:30px;
+}
 article,
 aside,
 details,
