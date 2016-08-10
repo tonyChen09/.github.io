@@ -139,7 +139,7 @@ li a:hover{
 .dropdown-content li a{
     display: inline-block;
     color: black;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
 }
 
@@ -171,33 +171,43 @@ li a:hover{
 .dropdown-content-submenu{
 	display: none;
     position: absolute;
-	width:175px;
+	width:155px;
 	background-color:grey;
 }
 
-.dropdown-content-submenu-01{
+
+
+.dropbtn{
+	width:150px;
+}
+.dropdown-content-submenu-01
+{
 	display: none;
     position: absolute;
 	width:200px;
-	background-color:grey;
+	left:155px;
 }
 
-.dropdown-content-submenu-01 a{
-	color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    text-align: left;
-	display:block;
-	
+.dropdown-submenu-00 a
+{
+	background-color:grey;
+	width:200px;
 }
+
+.dropdown-submenu a{
+	width:155px;
+}
+
+
+
 
 .dropdown-submenu:hover .dropdown-content-submenu{
 	display:inline-block;	
 }
-
-.dropdown-submenu:hover .dropdown-content-submenu-01{
+.dropdown-submenu-00:hover .dropdown-content-submenu-01{
 	display:inline-block;	
 }
+
 
 .headline{
 	position:static;
