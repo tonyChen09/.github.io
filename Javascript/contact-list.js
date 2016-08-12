@@ -12,9 +12,14 @@ var Program = {
 			}
 		}
 		,
-		cariKontak(nama)
+		cariKontak : function(nama)
 		{
-			
+			for(i=0;i<daftarKontak.length;i++){
+			if( nama == daftarKontak[i])
+			{
+				document.write(daftarKontak[i]+daftarKontak[i+1]+daftarKontak[i+2]);
+			}
+			}
 		}
 }
 
@@ -23,3 +28,4 @@ Program.tambahKontak("tony","tony_chen93@yahoo.com","324234312");
 Program.tambahKontak("Andy","andy_chen@yahoo.com","1313444");
 
 Program.lihatSemua();
+Program.cariKontak("Andy");
