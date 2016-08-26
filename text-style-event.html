@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title>Text Style</title>
+<style>
+button{
+width:200px;
+height:50px;
+}
+#tulisan{
+font-size:25px;
+}
+</style>
+<body>
+<button id="tulisan"onmousedown = "WhichButton(event)">Ubah Warna</button>
+<script>
+
+function WhichButton(event) {
+    var x = event.buttons;
+	if(x == 1){
+	makeBold();
+	}else if(x==2)
+	{
+	makeItalic();
+	}
+}
+function makeItalic()
+{
+	document.getElementById("tulisan").style.fontStyle = "italic";
+	
+}
+
+function makeBold()
+{
+document.getElementById("tulisan").style.fontWeight = "900";
+}
+</script>
+</body>
+</head>
+</html>
