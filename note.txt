@@ -1,0 +1,57 @@
+"use strict";
+
+var chessboard = [["x","x","o"],
+                  ["o","x","o"],
+                  ["o","o","x"]]
+
+
+
+
+var chessboard =  [ ["Benteng Putih", "Kuda Putih", "Mentri Putih", "Raja Putih", "Ratu Putih", "Mentri Putih", " Kuda Putih", "Benteng Putih"],
+                    ["Pion Putih", "Pion Putih", "Pion Putih", "Pion Putih", "Pion Putih", "Pion Putih", "Pion Putih"],
+                    ["", "", "", "", "", "", "", ""],
+                    ["", "", "", "", "", "", "", ""],
+                    ["", "", "", "", "", "", "", ""],
+                    ["", "", "", "", "", "", "", ""],
+                    ["", "", "", "", "", "", "", ""],
+                    ["", "", "", "", "", "", "", ""],
+                    ["Pion Hitam", "Pion Hitam", "Pion Hitam", "Pion Hitam", "Pion Hitam", "Pion Hitam", "Pion Hitam"],
+                    ["Benteng Hitam", "Kuda Hitam", "Mentri Hitam", "Raja Hitam", "Ratu Hitam", "Mentri Hitam", " Kuda Hitam", "Benteng Hitam"]
+                  ];
+
+var table = [
+              ['12','joe schmo','center',[14,32,7,0,23]],
+              ['9','ken buckets','point guard',[14,99,7,0,23]],
+              ['31','harvey kay','shooting guard',[14,32,7,0,23]],
+              ['18','sally talls','power foward',[14,32,7,0,23]],
+              ['22','mo diboux','small foward',[14,32,7,0,23]]
+            ];
+
+function convert_object(){
+  var object_table = [];
+  console.log(table[0].length);
+
+  for(var idx = 0; idx < table.length; idx++){
+    object_table[idx] = {};
+    for(var idy = 0; idy < table[idx].length; idy++){
+      if(idy == 0) object_table[idx].number = table[idx][idy];
+      else if(idy == 1) object_table[idx].name = table[idx][idy];
+      else if(idy == 2) object_table[idx].position = table[idx][idy];
+      else if(idy == 3) object_table[idx].point = table[idx][idy];
+    }
+  }
+
+  console.log(object_table);
+}
+convert_object();
+
+function pindah(from_x, from_y, to_x, to_y){
+  console.log(chessboard[1][0]);
+  console.log("pindah");
+  chessboard[to_x][to_y] = chessboard[from_x][from_y];
+  chessboard[from_x][from_y] = "";
+  console.log(chessboard[1][0]);
+}
+pindah(1, 0, 2, 0);
+console.log(table[0][1]);
+console.log(table[1][3][1]);
